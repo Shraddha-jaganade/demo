@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodie Login</title>
+  <style>
+    /* Resetting some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?food,restaurant'); */
+      background-size: cover;
+      color: white;
+      background-image:url(1.jpg);
+    
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      background: transparent;
+      backdrop-filter: blur(20px);
+      
+    }
+
+    .login-container h1 {
+      margin-bottom: 1.5rem;
+      font-size: 24px;
+      color: #f1ab1e;
+      font-weight: bold;
+    }
+    .login-container p {
+      margin-bottom: 0.5rem;
+      color: green;
+      font-family:Georgia, 'Times New Roman', Times, serif ;
+    }
+  
+
+    .input-field {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    .input-field input {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .input-field input::placeholder {
+      color: #555;
+    }
+    .login-btn {
+      background-color: #f7b42c;
+      color: white;
+      padding: 0.8rem;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #fc5c7d;
+    }
+
+    .bottom-text {
+      margin-top: 1rem;
+      font-size: 14px;
+    }
+
+    .bottom-text a {
+      color: #f7b42c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Adding some animation */
+    @keyframes floating {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .food-icon {
+      font-size: 36px;
+      animation: floating 3s ease-in-out infinite;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <div class="food-icon">🍕</div>
+  <h1>Welcome to Foodie!</h1>
+  <p>Login to satisfy your cravings</p>
+  
+  <div class="input-field">
+    <input type="email" placeholder="Email Address" required>
+  </div>
+  
+  <div class="input-field">
+    <input type="password" placeholder="Password" required>
+  </div>
+  
+  <a href="homepage.html"><button class="login-btn">Login</button></a>
+  
+  <div class="bottom-text">
+    <p>Don’t have an account? <a href="#">Sign up</a></p>
+  </div>
+</div>
+
+</body>
+</html>
